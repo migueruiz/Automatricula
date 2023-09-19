@@ -1,7 +1,7 @@
 # Automatricula
 ## Descripción del problema
 
-Soy un alumno que desea saber si existe algún tipo de incompatibilidad horaria en su horario, dependiendo de los grupos y subgrupos que he seleccionado.
+Soy un alumno que quiere solucionar los problenmas de incompatibilidad horarias de su horario escolar, haciendo que el programa me brinde nuevas opciones para crear un nuevo horario sin ningún tipo de inconcompatiblidad horaria.
 
 # Configuración de GitHub
 
