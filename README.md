@@ -1,7 +1,7 @@
 # Automatricula
 ## Descripción del problema
 
-Soy un alumno que quiere solucionar los problenmas de incompatibilidad horarias de su horario escolar, haciendo que el programa me brinde nuevas opciones para crear un nuevo horario sin ningún tipo de inconcompatiblidad horaria.
+Soy un alumno universitario que quiere solucionar los problenmas de incompatibilidad horarias de las diferentes asignaturas que tengo.
 
 # Configuración de GitHub
 
