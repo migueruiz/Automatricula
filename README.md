@@ -21,8 +21,8 @@ Soy un alumno universitario que quiere solucionar los problenmas de incompatibil
 
 # Historias de usuario
 
--[Historias de usuario](./doc/historias_usuario.md)
+- [Historias de usuario](./doc/historias_usuario.md)
 
 # Milestone
 
--[Milestone](./doc/milestone.md)
+- [Milestone](./doc/milestone.md)
