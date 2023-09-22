@@ -1,7 +1,5 @@
 # Milestone
 
-Soy un alumno universitario que quiere solucionar los problenmas de incompatibilidad horarias de las diferentes asignaturas que tengo.
-
 - **M0**: Crear estructura de datos para almacenar los datos de los usuarios.
     - Datos:
         - Nombre.

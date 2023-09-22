@@ -1,7 +1,5 @@
 # Historias de usuario
 
-Soy un alumno universitario que quiere solucionar los problenmas de incompatibilidad horarias de las diferentes asignaturas que tengo.
-
 ## [HU01]  
 Antonio tiene el horario de clase de la universidad. Pero tiene un problema, tiene que ir a clase de la asignatura de Programación a las 9:00 y a la de Sistemas Operativos a las 9:00. No puede estar en dos sitios a la vez.
 
