@@ -3,6 +3,12 @@
 
 Soy un alumno universitario que quiere solucionar los problenmas de incompatibilidad horarias de las diferentes asignaturas que tengo.
 
+## Historias de usuario y Milestone
+
+- [Historias de usuario](./doc/historias_usuario.md)
+
+- [Milestone](./doc/milestone.md)
+
 # Configuración de GitHub
 
 ## Configuración de claves
@@ -19,10 +25,3 @@ Soy un alumno universitario que quiere solucionar los problenmas de incompatibil
 
 ![Perfil GitHub](./doc/captura_foto.png)
 
-# Historias de usuario
-
-- [Historias de usuario](./doc/historias_usuario.md)
-
-# Milestone
-
-- [Milestone](./doc/milestone.md)
