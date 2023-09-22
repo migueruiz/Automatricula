@@ -18,3 +18,11 @@ Soy un alumno universitario que quiere solucionar los problenmas de incompatibil
 ## Perfil de GitHub reconocible
 
 ![Perfil GitHub](./doc/captura_foto.png)
+
+# Historias de usuario
+
+![Historias de usuario](./doc/historias_usuario.md)
+
+# Milestone
+
+![Milestone](./doc/milestone.md)
