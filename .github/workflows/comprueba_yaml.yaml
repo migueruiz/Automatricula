@@ -1,6 +1,8 @@
-name: Comprueba IV.yaml
+name: Comprueba iv.yaml
 on:
   pull_request:
+    paths: **/*.ya?ml
+
 jobs:
   lint-yaml:
     runs-on: ubuntu-latest
@@ -10,5 +12,5 @@ jobs:
       - name: Comprueba YAML
         uses: ibiqlik/action-yamllint@v3
         with:
-          file_or_dir: iv.yaml 
-          
+          file_or_dir: iv.yaml
+
