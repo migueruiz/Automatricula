@@ -1,0 +1,13 @@
+name: Comprueba IV.yaml
+on:
+  pull_request:
+jobs:
+  lint-yaml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        name: Baja fuentes
+      - uses: bieggerm/yamllint@v1.53
+        name: lint-yaml
+        with:
+          filename: "iv.yaml"
