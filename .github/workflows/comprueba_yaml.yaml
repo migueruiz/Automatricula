@@ -2,8 +2,8 @@ name: Comprueba iv.yaml
 on:
   pull_request:
     paths:
-      - **/*.yml
-      - **/*.yaml
+      - "**/*.yml"
+      - "**/*.yaml"
 
 jobs:
   lint-yaml:
