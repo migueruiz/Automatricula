@@ -1,4 +1,8 @@
 # Automatricula
+
+[![Comprueba
+IV.yaml](https://github.com/migueruiz/Automatricula/actions/workflows/comprueba_yaml.yaml/badge.svg)](https://github.com/migueruiz/Automatricula/actions/workflows/comprueba_yaml.yaml)
+
 ## Descripción del problema
 
 Soy un alumno universitario que quiere solucionar los problenmas de incompatibilidad horarias de las diferentes asignaturas que tengo.
