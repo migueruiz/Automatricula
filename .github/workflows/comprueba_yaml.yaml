@@ -7,3 +7,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         name: Baja fuentes
+      - name: Comprueba YAML
+        uses: ibiqlik/action-yamllint@v3
+        with:
+          file_or_dir: iv.yaml .github/workflows/*.ya?ml
+          
