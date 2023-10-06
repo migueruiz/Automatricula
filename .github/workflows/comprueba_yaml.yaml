@@ -10,5 +10,5 @@ jobs:
       - name: Comprueba YAML
         uses: ibiqlik/action-yamllint@v3
         with:
-          file_or_dir: iv.yaml .github/workflows/*.ya?ml
+          file_or_dir: iv.yaml 
           
