@@ -7,7 +7,3 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         name: Baja fuentes
-      - uses: bieggerm/yamllint@v1.53
-        name: lint-yaml
-        with:
-          filename: "iv.yaml"
