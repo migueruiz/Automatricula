@@ -1,3 +1,5 @@
+import { Curso } from "./curso";
+
 /**
  *
  * Clase Asignatura.
@@ -7,3 +9,14 @@
  * 
  * */
 
+export class Asignatura{
+    private codigo: string;
+    private nombre: string;
+    private curso: Curso;
+
+    constructor(codigo: string, nombre: string, curso: Curso){
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.curso = curso;
+    }
+}
