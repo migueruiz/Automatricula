@@ -1,3 +1,6 @@
+import { Estudiante } from "./estudiante";
+import { DiaConAsignaturas } from "./types";
+
 /**
  *
  * Clase Horario.
@@ -7,3 +10,21 @@
  * objetos de las clases Estudiante y Asignatura.
  * 
  * */
+
+export class Horario{
+    private estudiante: Estudiante;
+    private asignaturas: DiaConAsignaturas[];
+
+    constructor(estudiante: Estudiante){
+        this.estudiante = estudiante;
+
+        // Las asignaturas matriculadas por el estudiante se deben añadir.
+        this.asignaturas = [];
+    }
+
+
+
+    
+
+
+}
