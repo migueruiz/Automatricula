@@ -1,8 +1,9 @@
 /**
  *
  * Clase Asignatura.
- * Objeto valor.
+ * Entidad.
  * 
  * Almacena información referente a cada asignatura disponible en el grado.
  * 
  * */
+

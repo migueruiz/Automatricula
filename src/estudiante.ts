@@ -3,6 +3,7 @@
  * Clase Estudiante.
  * Entidad.
  * 
- * Almacena los datos personales de cada alumno.
+ * Almacena los datos personales de cada estudiante en la universidad.
  * */
+
 
