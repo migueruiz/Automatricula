@@ -1,2 +1,5 @@
 lenguaje: TypeScript
-entidad:
+entidad: 
+  - src/estudiante.ts
+  - src/curso.ts
+  - src/horario.ts
