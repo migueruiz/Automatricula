@@ -174,9 +174,6 @@ tsconfig.json
 dist/
 out/
 
-# @types directoru
-@types/
-
 # yarn block file
 yarn.lock
 
