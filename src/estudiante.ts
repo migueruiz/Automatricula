@@ -25,4 +25,24 @@ export class Estudiante{
         this.asignaturas_matriculadas = [];
     }
 
+    public getNombreCompleto(): string{
+        return this.nombre + " " + this.apellidos;
+    }
+
+    public getDNI(): string{
+        return this.dni;
+    }
+
+    public getCorreo(): string{
+        return this.correo;
+    }
+
+    public getAsignaturasMatriculadas(): Asignatura[]{
+        return this.asignaturas_matriculadas;
+    }
+
+    public addAsignaturaMatriculada(asignatura: Asignatura): void{
+        this.asignaturas_matriculadas.push(asignatura);
+    }
+
 }
