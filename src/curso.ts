@@ -1,22 +1,16 @@
 import { Asignatura } from "./asignatura";
-import { Dia, Hora } from "./types";
+import { HorarioAsignatura } from "./types";
 
 /**
  * 
- * Interfaces AsignaturaConHorario y Grupo.
+ * Interfaces Grupo.
  * Agregado.
  * 
- * Representan el horario de las asignaturas que se imparten en un grupo
- * perteneciente a un curso y el propio grupo, respectivamente.
+ * Representa un determinado grupo perteneciente a un curso.
  */
-
-interface AsignaturaConHorario extends Asignatura{
-    horario: Array<[Dia, Hora[]]>;
-}
-
 export interface Grupo{
     nombre: string;
-    asignaturas: AsignaturaConHorario[];
+    asignaturas: Asignatura[];
 }
 
 /**
@@ -37,4 +31,76 @@ export class Curso{
         this.nombre = nombre;
         this.grupos = [];
     }
+
+    public getNombre(): string{
+        return this.nombre;
+    }
+
+    public getGrupos(): Grupo[]{
+        return this.grupos;
+    }
+
+    public getGrupo(nombre_grupo: string): Grupo | undefined{
+        for (const grupo of this.grupos) {
+            if (grupo.nombre === nombre_grupo)
+                return grupo;
+        }
+        return undefined;
+    }
+
+    public getNombreGrupos(): string[]{
+        let nombres_grupos: string[] = [];
+        this.grupos.forEach(grupo => {
+            nombres_grupos.push(grupo.nombre);
+        });
+        return nombres_grupos;
+    }
+
+    public addGrupo(nombre_grupo: string): void{
+        this.grupos.push({
+            nombre: nombre_grupo,
+            asignaturas: []
+        });
+    }
+
+    public addAsignaturaToGrupo(asignatura: Asignatura, nombre_grupo: string): void{
+        let grupo: Grupo | undefined = this.getGrupo(nombre_grupo);
+
+        // Comprueba la existencia de 'grupo'.
+        if(grupo === undefined){
+            throw new Error("No existe el grupo " + nombre_grupo + " en el curso " + this.nombre);
+        }
+        grupo.asignaturas.push(asignatura);
+    }
+
+
+    public getAsignaturasFromGrupo(nombre_grupo: string): Asignatura[]{
+        let grupo: Grupo | undefined = this.getGrupo(nombre_grupo);
+
+        // Comprueba la existencia de 'grupo'.
+        if(grupo === undefined){
+            throw new Error("No existe el grupo " + nombre_grupo + " en el curso " + this.nombre);
+        }
+        return grupo.asignaturas;
+    }
+
+    public getAsignaturaFromGrupo(nombre_asignatura: string, grupo: Grupo): Asignatura | undefined{
+        for (const asignatura of grupo.asignaturas) {
+            if (asignatura.getNombre() === nombre_asignatura) {
+                return asignatura;
+            }
+        }
+        return undefined;
+    }
+    
+
+    public getHorarioFromAsignatura(nombre_asignatura: string, grupo: Grupo): HorarioAsignatura | undefined{
+        for (const asignatura of grupo.asignaturas) {
+            if (asignatura.getNombre() === nombre_asignatura) {
+                return asignatura.getHorario();
+            }
+        }
+        return undefined;
+    }
+    
 }
