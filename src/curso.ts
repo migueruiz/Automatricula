@@ -55,52 +55,5 @@ export class Curso{
         });
         return nombres_grupos;
     }
-
-    public addGrupo(nombre_grupo: string): void{
-        this.grupos.push({
-            nombre: nombre_grupo,
-            asignaturas: []
-        });
-    }
-
-    public addAsignaturaToGrupo(asignatura: Asignatura, nombre_grupo: string): void{
-        let grupo: Grupo | undefined = this.getGrupo(nombre_grupo);
-
-        // Comprueba la existencia de 'grupo'.
-        if(grupo === undefined){
-            throw new Error("No existe el grupo " + nombre_grupo + " en el curso " + this.nombre);
-        }
-        grupo.asignaturas.push(asignatura);
-    }
-
-
-    public getAsignaturasFromGrupo(nombre_grupo: string): Asignatura[]{
-        let grupo: Grupo | undefined = this.getGrupo(nombre_grupo);
-
-        // Comprueba la existencia de 'grupo'.
-        if(grupo === undefined){
-            throw new Error("No existe el grupo " + nombre_grupo + " en el curso " + this.nombre);
-        }
-        return grupo.asignaturas;
-    }
-
-    public getAsignaturaFromGrupo(nombre_asignatura: string, grupo: Grupo): Asignatura | undefined{
-        for (const asignatura of grupo.asignaturas) {
-            if (asignatura.getNombre() === nombre_asignatura) {
-                return asignatura;
-            }
-        }
-        return undefined;
-    }
-    
-
-    public getHorarioFromAsignatura(nombre_asignatura: string, grupo: Grupo): HorarioAsignatura | undefined{
-        for (const asignatura of grupo.asignaturas) {
-            if (asignatura.getNombre() === nombre_asignatura) {
-                return asignatura.getHorario();
-            }
-        }
-        return undefined;
-    }
     
 }

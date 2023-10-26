@@ -41,8 +41,4 @@ export class Estudiante{
         return this.asignaturas_matriculadas;
     }
 
-    public addAsignaturaMatriculada(asignatura: Asignatura): void{
-        this.asignaturas_matriculadas.push(asignatura);
-    }
-
 }
