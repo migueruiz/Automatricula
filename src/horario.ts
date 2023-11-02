@@ -1,3 +1,5 @@
+import { Asignatura } from './asignatura';
+
 /**
  *
  * Clase Horario.
@@ -8,5 +10,8 @@
  * */
 
 export class Horario{
+
+    private asignaturas: Asignatura[];
+
 }
 
