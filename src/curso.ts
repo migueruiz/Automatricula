@@ -1,3 +1,5 @@
+import { Asignatura } from './asignatura';
+
 /**
  * 
  * Clase Curso
@@ -7,6 +9,8 @@
  */
 
 export class Curso{
+    
     private nombre: string;
+    private asignaturas: Asignatura[];
 
 }
