@@ -21,6 +21,7 @@ export class Asignatura{
 
     private nombre: string;
     private curso: Curso;
+    private horario: HorarioAsignatura;
 
 }
 
