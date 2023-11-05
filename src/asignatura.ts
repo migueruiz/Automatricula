@@ -9,7 +9,7 @@ export type HorarioAsignatura = Array<[Dia, InicioFin[]]>;
 export class Asignatura{
 
     private nombre: string;
-
+    private horario: HorarioAsignatura;
 }
 
 
