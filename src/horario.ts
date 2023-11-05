@@ -2,7 +2,7 @@ import { Asignatura } from './asignatura';
 
 export interface Horario{
 
-    private asignaturas: Asignatura[];
+    private asignaturas_matriculadas: Asignatura[];
 
 }
 
