@@ -6,6 +6,12 @@ export interface Horario{
 
 }
 
+function compruebaSolapamientos(horario: Horario): Asignatura[][]{
+    
+        return [];
+    
+}
+
 
 
 
