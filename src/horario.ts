@@ -7,8 +7,10 @@ export interface Horario{
 }
 
 function compruebaSolapamientos(horario: Horario): Asignatura[][]{
-    
-        return [];
+
+    // Comprueba si hay solapamientos en el horario y 
+    // devuelve un array con las asignaturas que se solapan.
+    return [];
     
 }
 
