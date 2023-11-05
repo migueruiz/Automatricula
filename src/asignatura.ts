@@ -1,3 +1,5 @@
+import { Curso } from "./curso";
+
 export type Dia = "Lunes" | "Martes" | "Miércoles" | "Jueves" | "Viernes";
 
 export type HoraMinutos = [number, number];
@@ -10,6 +12,7 @@ export class Asignatura{
 
     private nombre: string;
     private horario: HorarioAsignatura;
+    private curso: Curso;
 }
 
 
