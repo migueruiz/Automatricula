@@ -16,6 +16,19 @@ function compruebaSolapamientos(asignaturas: Asignatura[]): Asignatura[]{
     
 }
 
+function generaHorario(asignaturas: Asignatura[]): Asignatura[]{
+
+    const horario: Asignatura[] = [];
+
+    // Comprueba si existen solapamientos en el horario.
+    if (compruebaSolapamientos(asignaturas).length > 0){
+        
+        // Reorganiza el horario.
+    }
+
+    return horario;
+}
+
 
 
 
