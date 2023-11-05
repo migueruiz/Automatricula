@@ -6,13 +6,17 @@ export interface Horario{
 
 }
 
-function compruebaSolapamientos(horario: Horario): Asignatura[][]{
+function compruebaSolapamientos(asignaturas: Asignatura[]): Asignatura[]{
+
+    const asignaturas_solapadas: Asignatura[] = [];
 
     // Comprueba si hay solapamientos en el horario y 
     // devuelve un array con las asignaturas que se solapan.
-    return [];
+    return asignaturas_solapadas;
     
 }
+
+
 
 
 
