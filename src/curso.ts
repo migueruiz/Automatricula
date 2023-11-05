@@ -11,5 +11,6 @@ interface Grupo{
 export class Curso{
     
     private nombre: string;
+    private grupos: Grupo[];
 
 }
