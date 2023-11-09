@@ -6,6 +6,6 @@
     "scripts": {
         "check": "tsc --noEmit src/estudiante.ts src/asignatura.ts",
         "build": "tsc",
-        "start": "node dist/estudiante.js"
+        "start": "node dist/estudiante.ts"
     }
 }
