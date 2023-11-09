@@ -2,5 +2,10 @@
     "name": "easyselect",
     "version": "0.0.1",
     "dependencies": {
+    },
+    "scripts": {
+        "check": "tsc --noEmit src/estudiante.ts src/asignatura.ts",
+        "build": "tsc",
+        "start": "node dist/estudiante.js"
     }
 }
