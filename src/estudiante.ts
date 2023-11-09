@@ -1,8 +1,14 @@
-import { Asignatura } from "./asignatura";
+import { AsignaturaConGrupos } from './types';
 
+/**
+ * 
+ * Clase Estudiante.
+ * 
+ * Entidad.
+ */
 export class Estudiante{
     
     private nombre: string;
-    private asignaturasMatriculadas: Asignatura[];
+    private asignaturas_matriculadas: AsignaturaConGrupos[];
 
 }
