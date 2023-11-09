@@ -1,0 +1,5 @@
+lenguaje: TypeScript 
+entidad: src/estudiante.ts
+automatizar:
+  fichero: package.json
+  orden: npm run
