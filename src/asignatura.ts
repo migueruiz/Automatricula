@@ -1,5 +1,3 @@
-import { Curso } from "./curso";
-
 /**
  * 
  * Clase Asignatura.
@@ -10,7 +8,6 @@ import { Curso } from "./curso";
 export class Asignatura{
 
     private nombre: string;
-    private curso: Curso;
 
 }
 
