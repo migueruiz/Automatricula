@@ -9,7 +9,7 @@ export type Grupo = {
     horario: HorarioAsignatura;
 };
 
-export type AsignaturasConGrupo = {
+export type AsignaturaConGrupos = {
     asignatura: Asignatura;
     grupos: Grupo[];
 };
@@ -24,6 +24,6 @@ export type AsignaturasConGrupo = {
 export class Curso {
 
     private nombre: string;
-    private asignaturas: AsignaturasConGrupo[];
+    private asignaturas: AsignaturaConGrupos[];
 
 }
