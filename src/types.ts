@@ -13,3 +13,8 @@ export type AsignaturaConGrupos = {
     asignatura: Asignatura;
     grupos: Grupo[];
 };
+
+export type AsigGrup = {
+    asignatura: Asignatura;
+    grupo: Grupo;
+};
