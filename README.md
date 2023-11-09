@@ -3,6 +3,19 @@
 
 Soy un alumno universitario que quiere solucionar los problenmas de incompatibilidad horarias de las diferentes asignaturas que tengo.
 
+
+## Clase Estudiante
+
+La clase candidato representa a la entidad principal del proyecto. En esta clase se encuentra la lógica de negocio principal del proyecto, siendo la creación del horario de un alumno.
+
+### Comprobación de sintaxis
+
+Para comprobar la sintaxis de esta entidad y del resto del código será necesario ejecular la tarea check puede hacerse de las siguientes formas:
+
+```bash
+npm run check
+```
+
 ## Historias de usuario y Milestone
 
 - [Historias de usuario](./doc/historias_usuario.md)
