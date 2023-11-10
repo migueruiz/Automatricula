@@ -2,6 +2,7 @@
     "name": "automatricula",
     "version": "0.0.1",
     "dependencies": {
+        "typescript": "^5.2.2"
     },
     "scripts": {
         "check": "tsc --noEmit src/estudiante.ts src/asignatura.ts",
