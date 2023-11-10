@@ -8,7 +8,7 @@ Para elegir el gestor de dependencias tendremos en cuenta estos criterios:
 
 - **Soporte:** El gestor de dependencias debe tener soporte para el runtime que hemos seleccionado.
 
-- **Simplicidad:** El gestor de dependencias ha de ser fácil de usar, aprender y de entender.
+- **Mantenimiento**: La herramienta es conveniente que tenga cierta antigüedad, para demostrar que es solida, pero que tenga ultimas versiones, que sean lo más recientes posibles y no presenten problemas es lo más importante.
 
 - **Comunidad:** El gestor de dependencias debe tener una comunidad amplia que pueda nos ayude a resolver los problemas que se nos presenten.
 
