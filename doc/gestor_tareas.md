@@ -6,11 +6,9 @@ Un gestor de tareas es una herramienta que nos ayuda a realizar tareas repetitiv
 
 Para la elección de nuestro gestor de tareas tenemos que tener en cuenta diferentes criterios, que son importantes para tomar la mejor decisión. Estos criterios son:
 
-- **Simplicidad**: La herramienta debe ser fácil de usar y de entender, ya que nos debe prestar una manera de hacerlo sencillo y bastante fácil de entender, no tengamos que indagar muchisimo en crear uno.
-
 - **Comunidad:** El gestor de dependencias debe tener una comunidad que pueda ayudar a resolver problemas.
 
-- **Rendimiento**: La herramienta debe ser lo más rápida y eficiente que pueda ser.
+- **Mantenimiento**: La herramienta es conveniente que tenga cierta antigüedad, para demostrar que es solida, pero que tenga ultimas versiones, que sean lo más recientes posibles.  
 
 
 ## Gestores de tareas
@@ -32,4 +30,4 @@ NPM scripts es un gestor de tareas que viene integrado en NPM,  utiliza el archi
 
 ## Elección del gestor de tareas
 
-Tras valorar las diferentes opciones para mi proyecto he escogido NPM scripts como gestor de tareas. Debido a que NPM scripts tiene una amplia gama de funcionalidades y es un gestor de tareas simple. Además, al contar ya con NPM, no necesitariamos instalar nada más, ya que viene lo necesario para poder utilizar NPM scripts. Otra gran ventaja por la que lo he elegido es su gran comunidad, en comparación de otras herramientas.
+Tras valorar las diferentes opciones para mi proyecto he escogido NPM scripts como gestor de tareas. Debido a que NPM scripts tiene una amplia gama de funcionalidades y que esta siempre actualizandose. Además, al contar ya con NPM, no necesitariamos instalar nada más, ya que viene lo necesario para poder utilizar NPM scripts. Otra gran ventaja por la que lo he elegido es su gran comunidad, en comparación de otras herramientas.
