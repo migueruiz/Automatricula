@@ -6,7 +6,7 @@ Antes de elegir las herramientas que utilizaremos en nuestro proyecto, es import
 
 - **Estabilidad**: La herramienta se debe de encontrar en fase estable, no podemos depender de herramientas que estén en fase de desarrollo, o que cuente con muchos errores, ya que sino necesitaremos cambiar cada poco tiempo nuestra herramienta.
 
-- **Simplicidad**: La herramienta que queremos elegir, ha de ser una herramienta que no nos suponga un gran esfuerzo de aprendizaje. También debemos de valorar su comunidad y la documentación que esta tiene.
+- **Mantenimiento**: Es conveniente que la herramienta se vaya actualizando, no sea un runtime desactualizado de hace varios años, que no tiene en cuenta las ultimas versiones.
 
 - **Soporte**: La herramienta que usamos debe de ser una herramienta que tenga soporte para el lenguaje que hemos elegido, en mi caso sería TypeScript.
 
