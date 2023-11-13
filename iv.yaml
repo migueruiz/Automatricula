@@ -1,1 +1,2 @@
-# Fichero YAML para IV vacío
+lenguaje: TypeScript
+entidad: src/horario.ts
