@@ -33,4 +33,4 @@ NPM scripts es un gestor de tareas que viene integrado en NPM,  utiliza el archi
 
 ## Elección del gestor de tareas
 
-Tras valorar las diferentes opciones para mi proyecto he escogido NPM scripts como gestor de tareas. Debido a que NPM scripts tiene una amplia gama de funcionalidades y que esta siempre actualizandose. Además, al contar ya con NPM, no necesitariamos instalar nada más, ya que viene lo necesario para poder utilizar NPM scripts. Otra gran ventaja por la que lo he elegido es su gran comunidad, en comparación de otras herramientas.
+Tras valorar las diferentes opciones para mi proyecto he escogido NPM scripts como gestor de tareas. Debido a que NPM scripts tiene una amplia gama de funcionalidades y que esta siempre actualizandose. Además, al contar ya con NPM, no necesitariamos instalar nada más, ya que viene lo necesario para poder utilizar NPM scripts. Otra gran ventaja por la que lo he elegido es su gran comunidad, en comparación de otras herramientas. Además de ser una herramienta muy segura, como se puede encontrar en Snyk Advisor. 
