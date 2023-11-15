@@ -12,9 +12,9 @@ Para elegir el gestor de dependencias tendremos en cuenta estos criterios:
 
 - **Comunidad:** El gestor de dependencias debe tener una comunidad amplia que pueda nos ayude a resolver los problemas que se nos presenten.
 
-- [npm](https://nodejs.org/en/)
-- [pnpmm](https://deno.com/)
-- [Yarn](https://bun.sh/)
+- [npm](https://www.npmjs.com/)
+- [pnpmm](https://pnpm.io/es/))
+- [Yarn](https://yarnpkg.com/)
 
 ## Gestores de dependencias
 
