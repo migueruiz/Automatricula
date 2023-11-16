@@ -1,2 +1,5 @@
-lenguaje: TypeScript
+lenguaje: TypeScript 
 entidad: src/horario.ts
+automatizar:
+  fichero: package.json
+  orden: npm run
