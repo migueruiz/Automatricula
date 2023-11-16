@@ -1,5 +1,5 @@
 lenguaje: TypeScript 
-entidad: src/estudiante.ts
+entidad: src/horario.ts
 automatizar:
   fichero: package.json
   orden: npm run
