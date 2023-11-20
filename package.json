@@ -1,11 +1,16 @@
 {
     "name": "automatricula",
     "version": "0.0.1",
+    "description": "Proyecto de la asignatura IV, Automatricula",
     "dependencies": {
         "typescript": "^5.2.2"
     },
+    "devDependencies": {
+        "vitest": "^0.34.6"
+    },
     "scripts": {
         "check": "tsc --noEmit src/estudiante.ts src/asignatura.ts",
+        "test": "vitest",
         "build": "tsc",
         "start": "node dist/estudiante.ts"
     }
