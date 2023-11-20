@@ -5,10 +5,13 @@
  * Entidad.
  */
 
-export class Asignatura{
-
+export class Asignatura {
     private nombre: string;
 
+    constructor(nombre: string) {
+        this.nombre = nombre;
+    }
 }
+
 
 
