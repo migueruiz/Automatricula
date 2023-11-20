@@ -20,25 +20,21 @@ Para comprobar la sintaxis de esta entidad y del resto del código será necesar
 npm run check
 ```
 
+### Ejercución de los tests
+
+Para ejecutar los test para la comprobación del horario de un alumno se puede hacer de las siguientes formas:
+
+```bash
+npm run test
+```
+
+
 ## Historias de usuario y Milestone
 
 - [Historias de usuario](./doc/historias_usuario.md)
 
 - [Milestone](./doc/milestone.md)
 
-# Configuración de GitHub
+## Herramientas de test
 
-## Configuración de claves
-
-![Clave en Github](./doc/captura_ssh.png)
-
-![Comprobación clave equipo local](./doc/captura_ssh_local.png)
-
-## Configuración del usuario y el mail en el equipo local
-
-![Usuario y mail github](./doc/captura_config.png)
-
-## Perfil de GitHub reconocible
-
-![Perfil GitHub](./doc/captura_foto.png)
-
+ - [Herramientas de Test](./doc/herramientas_test.md)
