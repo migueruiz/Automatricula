@@ -3,3 +3,4 @@ entidad: src/horario.ts
 automatizar:
   fichero: package.json
   orden: npm run
+test: test/comprobar_horario.test.ts
