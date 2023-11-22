@@ -1,7 +1,6 @@
 {
     "name": "automatricula",
     "version": "0.0.1",
-    "description": "Proyecto de la asignatura IV, Automatricula",
     "dependencies": {
         "typescript": "^5.2.2"
     },
