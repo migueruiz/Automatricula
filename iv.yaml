@@ -1,5 +1,5 @@
 ---
-lenguaje: TypeScript 
+lenguaje: TypeScript
 entidad: src/estudiante.ts
 automatizar:
   fichero: package.json
