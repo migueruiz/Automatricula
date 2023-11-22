@@ -11,6 +11,6 @@
         "check": "tsc --noEmit src/estudiante.ts src/asignatura.ts",
         "test": "vitest",
         "build": "tsc",
-        "start": "node dist/estudiante.ts"
+        "start": "node dist/estudiante.js"
     }
 }
