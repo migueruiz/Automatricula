@@ -22,6 +22,10 @@ Necesitamos elegir herramientas de test para nuestro proyecto. Para ello será n
 
 - [Assert](https://nodejs.org/api/assert.html): assert es una biblioteca de aserciones para Node.js, esta es la biblioteca estandar de Node. Tiene una valoración de [86](https://snyk.io/advisor/npm-package/assert) según SnykAdvisor.
 
+- [Hein](https://www.npmjs.com/package/hein): Hein es una biblioteca de aserciones para Node.js, compatible con TypeScript. Tiene una valoración de [70](https://snyk.io/advisor/npm-package/hein) según SnykAdvisor. Por lo que no es una muy buena opción.
+
+- [Should](https://www.npmjs.com/package/should): Should es una biblioteca de aserciones para Node.js, compatible con TypeScript. Tiene una valoración de [61](https://snyk.io/advisor/npm-package/should) según SnykAdvisor. Por lo que no es una muy buena opción ya que su valoración es muy baja y tiene una comunidad sin actividad según SnykAdvisor.
+
 ### Test runners o frameworks
 
 - [Jest](https://jestjs.io/): Jest es un testing framework para TypeScript, además de otros. Jest viene con una biblioteca de aserciones incorporada, por lo que nos ahorraría la instalación de una externa. Su valoración en SnykAdvisor es de [92](https://snyk.io/advisor/npm-package/jest).
