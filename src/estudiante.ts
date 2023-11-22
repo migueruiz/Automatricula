@@ -23,8 +23,8 @@ export class Estudiante{
         let comprobadoHorario = true;
         this.asignaturas_matriculadas.forEach(asigGrup => {
             this.asignaturas_matriculadas.forEach(asigGrup2 => {
-                if (asigGrup.grupo.horario[0][0] == asigGrup2.grupo.horario[0][0]) {
-                    comprobadoHorario = this.comprobarHora(asigGrup.grupo.horario[0][1][0][0], asigGrup2.grupo.horario[0][1][0][0], asigGrup.grupo.horario[0][1][0][1], asigGrup2.grupo.horario[0][1][0][1]);
+                if (this.getDiaAsignatura(asigGrup) == this.getDiaAsignatura(asigGrup2)) {
+                    comprobadoHorario = this.comprobarHora(this.getHoraInicioAsignatura(asigGrup), this.getHoraInicioAsignatura(asigGrup2), this.getHoraFinAsignatura(asigGrup), this.getHoraFinAsignatura(asigGrup2));
                 }
             });
         });
@@ -37,5 +37,17 @@ export class Estudiante{
         }
 
         return true;
+    }
+
+    private getDiaAsignatura(asigGrup: AsigGrup): string {
+        return asigGrup.grupo.horario[0][0];
+    }
+
+    private getHoraInicioAsignatura(asigGrup: AsigGrup): Date {
+        return asigGrup.grupo.horario[0][1][0][0];
+    }
+
+    private getHoraFinAsignatura(asigGrup: AsigGrup): Date {
+        return asigGrup.grupo.horario[0][1][0][1];
     }
 }
