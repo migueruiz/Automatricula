@@ -24,13 +24,10 @@ Necesitamos elegir herramientas de test para nuestro proyecto. Para ello será n
 
 - [Hein](https://www.npmjs.com/package/hein): Hein es una biblioteca de aserciones para Node.js, compatible con TypeScript. Tiene una valoración de [70](https://snyk.io/advisor/npm-package/hein) según SnykAdvisor. Por lo que no es una muy buena opción.
 
-- [Should](https://www.npmjs.com/package/should): Should es una biblioteca de aserciones para Node.js, compatible con TypeScript. Tiene una valoración de [61](https://snyk.io/advisor/npm-package/should) según SnykAdvisor. Por lo que no es una muy buena opción ya que su valoración es muy baja y tiene una comunidad sin actividad según SnykAdvisor.
 
 ### Test runners o frameworks
 
 - [Jest](https://jestjs.io/): Jest es un testing framework para TypeScript, además de otros. Jest viene con una biblioteca de aserciones incorporada, por lo que nos ahorraría la instalación de una externa. Su valoración en SnykAdvisor es de [92](https://snyk.io/advisor/npm-package/jest).
-
-- [Supertest](https://www.npmjs.com/package/supertest): Supertest es un test runner para Node.js. Sin embargo, no es compatible con Typescript. Por lo que no nos sirve, a pesar de que su valoración es de [86](https://snyk.io/advisor/npm-package/@types/supertest).
 
 - [AVA](https://github.com/avajs/ava): AVA es un test runner con soporte para TypeScript. Una gran ventaja es que cuenta con una biblioteca de aserciones integrada pero el problema que nos surge es que es muy simple, y podríamos necesitar hacer uso de otra externa. A pesar de eso su valoración en SnykAdvisor es de [94](https://snyk.io/advisor/npm-package/ava).
 
