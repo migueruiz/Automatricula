@@ -1,3 +1,4 @@
+import { as } from "vitest/dist/reporters-5f784f42";
 import { Asignatura } from "../src/asignatura";
 import { Curso } from "../src/curso";
 import { Estudiante } from "../src/estudiante";
@@ -17,15 +18,18 @@ describe("Comprobar horario", () => {
         // Creación de grupos 
         const grupo1 = {
             nombre: "Grupo A",
-            horario: [["Miércoles", [inicioFin1]]] as [Dia, InicioFin[]][]
+            dia : "Miércoles" as Dia,
+            horario: [inicioFin1] as InicioFin[]
         };
         const grupo2 = {
             nombre: "Grupo B",
-            horario: [["Jueves", [inicioFin1]]] as [Dia, InicioFin[]][]
+            dia : "Jueves" as Dia,
+            horario: [inicioFin1] as InicioFin[]
         };
         const grupo3 = {
             nombre: "Grupo B",
-            horario: [["Miércoles", [inicioFin1]]] as [Dia, InicioFin[]][]
+            dia : "Miércoles" as Dia,
+            horario: [inicioFin1] as InicioFin[],
         };
 
         // Creación de AsigGrup
@@ -37,7 +41,44 @@ describe("Comprobar horario", () => {
         // Creación de estudiantes
         const estudiante1 = new Estudiante("Pablo Barranco Torres", [asigGrup1, asigGrup2, asigGrup3], [], []);
 
-        expect(estudiante1.comprobarCompatibilidadHorario()).toBe(false)
+        const asigGrupEsperado = [
+            {
+                asignatura: new Asignatura("FFT"),
+                grupo: {
+                    nombre: "Grupo A",
+                    dia: "Miércoles" as Dia,
+                    horario: [inicioFin1] as InicioFin[],
+                },
+            },
+            {
+                asignatura: new Asignatura("SCD"),
+                grupo: {
+                    nombre: "Grupo B",
+                    dia: "Miércoles" as Dia,
+                    horario: [inicioFin1] as InicioFin[],
+                },
+            },
+            {
+                asignatura: new Asignatura("SCD"),
+                grupo: {
+                    nombre: "Grupo B",
+                    dia: "Miércoles" as Dia,
+                    horario: [inicioFin1] as InicioFin[],
+                },
+            },
+            {
+                asignatura: new Asignatura("FFT"),
+                grupo: {
+                    nombre: "Grupo A",
+                    dia: "Miércoles" as Dia,
+                    horario: [inicioFin1] as InicioFin[],
+                },
+            },
+        ];
+
+        
+
+        expect(estudiante1.comprobarCompatibilidadHorario()).toEqual(asigGrupEsperado)
     });
     it("Comprobar horario que no se solapa", () => {
         // Creación de asignaturas
@@ -52,15 +93,18 @@ describe("Comprobar horario", () => {
         // Creación de grupos 
         const grupo1 = {
             nombre: "Grupo A",
-            horario: [["Miércoles", [inicioFin1]]] as [Dia, InicioFin[]][]
+            dia : "Miércoles" as Dia,
+            horario: [inicioFin1] as InicioFin[]
         };
         const grupo2 = {
             nombre: "Grupo B",
-            horario: [["Jueves", [inicioFin1]]] as [Dia, InicioFin[]][]
+            dia : "Jueves" as Dia,
+            horario: [inicioFin1] as InicioFin[]
         };
         const grupo3 = {
             nombre: "Grupo B",
-            horario: [["Miércoles", [inicioFin2]]] as [Dia, InicioFin[]][]
+            dia : "Miércoles" as Dia,
+            horario: [inicioFin2] as InicioFin[],
         };
 
         // Creación de AsigGrup
@@ -72,6 +116,6 @@ describe("Comprobar horario", () => {
         // Creación de estudiantes
         const estudiante1 = new Estudiante("Pablo Barranco Torres", [asigGrup1, asigGrup2, asigGrup3], [], []);
 
-        expect(estudiante1.comprobarCompatibilidadHorario()).toBe(false)
+        expect(estudiante1.comprobarCompatibilidadHorario()).toEqual([]);
     });  
 });
