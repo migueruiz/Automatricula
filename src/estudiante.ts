@@ -19,35 +19,44 @@ export class Estudiante{
         this.asignaturas_alternativas = asignaturas_alternativas;
     }
 
-    public comprobarCompatibilidadHorario(): boolean {
+    public comprobarCompatibilidadHorario(): AsigGrup[] {
         let comprobadoHorario = true;
         this.asignaturas_matriculadas.forEach(asigGrup => {
             this.asignaturas_matriculadas.forEach(asigGrup2 => {
-                if (this.getDiaAsignatura(asigGrup) == this.getDiaAsignatura(asigGrup2)) {
-                    comprobadoHorario = this.comprobarHora(this.getHoraInicioAsignatura(asigGrup), this.getHoraInicioAsignatura(asigGrup2), this.getHoraFinAsignatura(asigGrup), this.getHoraFinAsignatura(asigGrup2));
+                if (asigGrup != asigGrup2){
+                    if (this.get_diaAsignatura(asigGrup) == this.get_diaAsignatura(asigGrup2)) {
+                        console.log(this.get_diaAsignatura(asigGrup));
+                        console.log(this.get_diaAsignatura(asigGrup2));
+                        comprobadoHorario = this.comprobarHora(this.get_horaInicioAsignatura(asigGrup), this.get_horaInicioAsignatura(asigGrup2), this.get_horaFinAsignatura(asigGrup), this.get_horaFinAsignatura(asigGrup2));
+
+                        if (!comprobadoHorario) {
+                            this.asignaturas_solapadas.push(asigGrup);
+                            this.asignaturas_solapadas.push(asigGrup2);
+                        }
+                    }
                 }
             });
         });
-        return comprobadoHorario;
+        return this.asignaturas_solapadas;
     }
 
     private comprobarHora(date1inicio: Date, date2inicio: Date, date1final: Date, date2final: Date): boolean {
-        if ((date1inicio.getHours() <= date2inicio.getHours() && date1final.getHours() > date2inicio.getHours()) || (date1inicio.getHours() < date2final.getHours() && date1final.getHours() >= date2final.getHours()) || (date1inicio.getHours() >= date2inicio.getHours() && date1final.getHours() <= date2final.getHours())) {
+        if ((date1inicio.getHours() < date2final.getHours() && date1final.getHours() >= date2inicio.getHours()) || (date1final.getHours() > date2inicio.getHours() && date1final.getHours() <= date2final.getHours()) || (date1inicio.getHours() == date2inicio.getHours() && date1final.getHours() == date2final.getHours()) || (date1inicio.getHours() == date2inicio.getHours() && date1final.getHours() > date2final.getHours()) || (date1inicio.getHours() < date2inicio.getHours() && date1final.getHours() == date2final.getHours()) || (date1inicio.getHours() < date2inicio.getHours() && date1final.getHours() > date2final.getHours())) {
             return false;
         }
 
         return true;
     }
 
-    private getDiaAsignatura(asigGrup: AsigGrup): string {
-        return asigGrup.grupo.horario[0][0];
+    private get_diaAsignatura(asigGrup: AsigGrup): string {
+        return asigGrup.grupo.dia;
     }
 
-    private getHoraInicioAsignatura(asigGrup: AsigGrup): Date {
-        return asigGrup.grupo.horario[0][1][0][0];
+    private get_horaInicioAsignatura(asigGrup: AsigGrup): Date {
+        return asigGrup.grupo.horario[0][1];
     }
 
-    private getHoraFinAsignatura(asigGrup: AsigGrup): Date {
-        return asigGrup.grupo.horario[0][1][0][1];
+    private get_horaFinAsignatura(asigGrup: AsigGrup): Date {
+        return asigGrup.grupo.horario[0][1];
     }
 }
