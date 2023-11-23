@@ -41,7 +41,22 @@ export class Estudiante{
     }
 
     private comprobarHora(date1inicio: Date, date2inicio: Date, date1final: Date, date2final: Date): boolean {
-        if ((date1inicio.getHours() < date2final.getHours() && date1final.getHours() >= date2inicio.getHours()) || (date1final.getHours() > date2inicio.getHours() && date1final.getHours() <= date2final.getHours()) || (date1inicio.getHours() == date2inicio.getHours() && date1final.getHours() == date2final.getHours()) || (date1inicio.getHours() == date2inicio.getHours() && date1final.getHours() > date2final.getHours()) || (date1inicio.getHours() < date2inicio.getHours() && date1final.getHours() == date2final.getHours()) || (date1inicio.getHours() < date2inicio.getHours() && date1final.getHours() > date2final.getHours())) {
+        if (date1inicio.getHours() < date2final.getHours() && date1final.getHours() >= date2inicio.getHours()) {
+            return false;
+        }
+        else if (date1final.getHours() > date2inicio.getHours() && date1final.getHours() <= date2final.getHours()) {
+            return false;
+        }
+        else if (date1inicio.getHours() == date2inicio.getHours() && date1final.getHours() == date2final.getHours()) {
+            return false;
+        }
+        else if (date1inicio.getHours() == date2inicio.getHours() && date1final.getHours() > date2final.getHours()) {
+            return false;
+        }
+        else if ( date1inicio.getHours() < date2inicio.getHours() && date1final.getHours() == date2final.getHours()) {
+            return false;
+        }
+        else if (date1inicio.getHours() < date2inicio.getHours() && date1final.getHours() > date2final.getHours()) {
             return false;
         }
 
