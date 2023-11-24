@@ -9,7 +9,7 @@
     },
     "scripts": {
         "check": "tsc --noEmit src/estudiante.ts src/asignatura.ts",
-        "test": "vitest --no-watch",
+        "test": "vitest -h",
         "build": "tsc",
         "start": "node dist/estudiante.js"
     }
