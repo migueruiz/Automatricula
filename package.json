@@ -5,11 +5,13 @@
         "typescript": "^5.2.2"
     },
     "devDependencies": {
-        "vitest": "^0.34.6"
+        "jest": "^0.34.6",
+        "@types/jest": "^29.5.8",
+        "ts-jest": "^29.1.1"
     },
     "scripts": {
         "check": "tsc --noEmit src/estudiante.ts src/asignatura.ts",
-        "test": "vitest --no-watch",
+        "test": "jest",
         "build": "tsc",
         "start": "node dist/estudiante.js"
     }
