@@ -1,9 +1,6 @@
-import { as } from "vitest/dist/reporters-5f784f42";
 import { Asignatura } from "../src/asignatura";
-import { Curso } from "../src/curso";
 import { Estudiante } from "../src/estudiante";
-import { AsignaturaConGrupos, Dia, InicioFin } from "../src/types";
-import { expect, describe, it } from 'vitest';
+import { Dia, InicioFin } from "../src/types";
 
 describe("Comprobar horario", () => {
     it("Comprobar horario que no se solapa", () => {
