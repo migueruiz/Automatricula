@@ -42,7 +42,7 @@ Y ejecutamos el contenedor con el siguiente comando:
 docker run  -tv `pwd`:/app/test migueruiz/automatricula
 ```
 
-También accedemos a la imagen que tenemos en docker hub con este enlace [Docker Hub](https://hub.docker.com/repository/docker/migueruiz/automatricula)
+También accedemos a la imagen que tenemos en docker hub con este enlace [Automatricula](https://hub.docker.com/repository/docker/migueruiz/automatricula)
 
 ## Historias de usuario y Milestone
 
