@@ -1,6 +1,6 @@
 import { Asignatura } from "../src/asignatura";
 import { Estudiante } from "../src/estudiante";
-import { Dia, InicioFin } from "../src/types";
+import { describe, expect, it } from "@jest/globals";
 
 describe("Comprobar horario", () => {
     it("Comprobar horario que no se solapa", () => {
@@ -10,23 +10,24 @@ describe("Comprobar horario", () => {
         const asignatura3 = new Asignatura("SCD");
 
         // Creación de InicioFin
-        const inicioFin1: InicioFin = [new Date('2023-11-20T11:30:00'), new Date('2023-11-20T13:30:00')];
+        const inicioFin1 = [new Date('2023-11-20T11:30:00'), new Date('2023-11-20T13:30:00')];
         
         // Creación de grupos 
         const grupo1 = {
             nombre: "Grupo A",
-            dia : "Miércoles" as Dia,
-            horario: [inicioFin1] as InicioFin[]
+            dia : "Miércoles",
+            horario: [inicioFin1]
         };
+
         const grupo2 = {
             nombre: "Grupo B",
-            dia : "Jueves" as Dia,
-            horario: [inicioFin1] as InicioFin[]
+            dia: "Jueves",
+            horario: [inicioFin1]
         };
         const grupo3 = {
             nombre: "Grupo B",
-            dia : "Miércoles" as Dia,
-            horario: [inicioFin1] as InicioFin[],
+            dia: "Miércoles",
+            horario: [inicioFin1]
         };
 
         // Creación de AsigGrup
@@ -48,24 +49,24 @@ describe("Comprobar horario", () => {
         const asignatura3 = new Asignatura("SCD");
 
         // Creación de InicioFin
-        const inicioFin1: InicioFin = [new Date('2023-11-20T11:30:00'), new Date('2023-11-20T13:30:00')];
-        const inicioFin2: InicioFin = [new Date('2023-11-20T15:30:00'), new Date('2023-11-20T17:30:00')];
+        const inicioFin1 = [new Date('2023-11-20T11:30:00'), new Date('2023-11-20T13:30:00')];
+        const inicioFin2 = [new Date('2023-11-20T15:30:00'), new Date('2023-11-20T17:30:00')];
         
         // Creación de grupos 
         const grupo1 = {
             nombre: "Grupo A",
-            dia : "Miércoles" as Dia,
-            horario: [inicioFin1] as InicioFin[]
+            dia : "Miércoles"  ,
+            horario: [inicioFin1]
         };
         const grupo2 = {
             nombre: "Grupo B",
-            dia : "Jueves" as Dia,
-            horario: [inicioFin1] as InicioFin[]
+            dia : "Jueves"  ,
+            horario: [inicioFin1]   
         };
         const grupo3 = {
             nombre: "Grupo B",
-            dia : "Miércoles" as Dia,
-            horario: [inicioFin2] as InicioFin[],
+            dia : "Miércoles"  ,
+            horario: [inicioFin2]
         };
 
         // Creación de AsigGrup
