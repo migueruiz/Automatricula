@@ -1,12 +1,9 @@
 import { Asignatura } from './asignatura';
 
-export type Dia = "Lunes" | "Martes" | "Miércoles" | "Jueves" | "Viernes";
-export type InicioFin = [Date, Date];
-
 export type Grupo = {
     nombre: string;
-    dia: Dia;
-    horario: InicioFin[]
+    dia: string;
+    horario: Date[][];
 };
 
 export type AsignaturaConGrupos = {
