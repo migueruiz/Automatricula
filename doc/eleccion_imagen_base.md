@@ -10,6 +10,8 @@ A la hora de la elección de la imagen para nuestro proyecto, tendre en cuenta u
 
 - **Compatibilidad**: La imagen base debe de ser compatible con el proyecto que vamos a realizar, y con todas las herramientas que necesitamos para su despliegue posterior.
 
+- **Puntuación en Snyk Advisor**: Snyk Advisor es una herramienta que nos permite analizar la seguridad de las dependencias de nuestro proyecto, y nos da una puntuación de 0 a 100, siendo 100 la mejor puntuación posible. Por lo que es conveniente que la imagen base tenga una puntuación alta.
+
 
 ## Opciones de elección de imagen base
 
