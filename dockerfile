@@ -1,6 +1,7 @@
 FROM node:21-alpine
 
-LABEL maintainer="mruiz812@correo.ugr.es"
+LABEL maintainer="mruiz812@correo.ugr.es"\
+      version="5.0.1"
 
 RUN mkdir /.npm && chmod 777 /.npm
 
