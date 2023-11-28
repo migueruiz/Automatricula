@@ -2,9 +2,9 @@
 
 ## Criterios de decisión de elección de imagen base
 
-A la hora de la elección de la imagen para nuestro proyecto, tendre en cuenta una serie de criterios, que se muestran más abajo, para valorar cuál es la mejor opción:
+A la hora de la elección de la imagen para nuestro proyecto, tendré en cuenta una serie de criterios, que se muestran más abajo, para valorar cuál es la mejor opción:
 
-- **Tamaño optimo**: Es conveniente que la imagen base sea lo más pequeña posible para que el container sea lo más ligero posible.
+- **Tamaño óptimo**: Es conveniente que la imagen base sea lo más pequeña posible para que el container sea lo más ligero posible.
 
 - **Ciclo de actualizaciones**:  Debe tener un buen mantenimiento y actualizaciones frecuentes para evitar problemas de seguridad, entre otros.
 
