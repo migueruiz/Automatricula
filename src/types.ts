@@ -6,7 +6,7 @@ export type InicioFin = [Date, Date];
 export type Grupo = {
     nombre: string;
     dia: Dia;
-    horario: InicioFin[]
+    horario: InicioFin;
 };
 
 export type AsignaturaConGrupos = {

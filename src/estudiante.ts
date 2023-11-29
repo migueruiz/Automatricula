@@ -25,8 +25,6 @@ export class Estudiante{
             this.asignaturas_matriculadas.forEach(asigGrup2 => {
                 if (asigGrup != asigGrup2){
                     if (this.get_diaAsignatura(asigGrup) == this.get_diaAsignatura(asigGrup2)) {
-                        console.log(this.get_diaAsignatura(asigGrup));
-                        console.log(this.get_diaAsignatura(asigGrup2));
                         comprobadoHorario = this.comprobarHora(this.get_horaInicioAsignatura(asigGrup), this.get_horaInicioAsignatura(asigGrup2), this.get_horaFinAsignatura(asigGrup), this.get_horaFinAsignatura(asigGrup2));
 
                         if (!comprobadoHorario) {
@@ -68,10 +66,10 @@ export class Estudiante{
     }
 
     private get_horaInicioAsignatura(asigGrup: AsigGrup): Date {
-        return asigGrup.grupo.horario[0][1];
+        return asigGrup.grupo.horario[0];
     }
 
     private get_horaFinAsignatura(asigGrup: AsigGrup): Date {
-        return asigGrup.grupo.horario[0][1];
+        return asigGrup.grupo.horario[0];
     }
 }

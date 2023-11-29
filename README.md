@@ -28,6 +28,21 @@ Para ejecutar los test para la comprobación del horario de un alumno se puede h
 npm run test
 ```
 
+### Contenedor de test
+
+Podemos construir la imagen del contenedor de test con el siguiente comando:
+
+```bash
+docker build -t migueruiz/automatricula .
+```
+
+Y ejecutamos el contenedor con el siguiente comando:
+
+```bash
+docker run  -tv `pwd`:/app/test migueruiz/automatricula
+```
+
+También accedemos a la imagen que tenemos en docker hub con este enlace [Automatricula](https://hub.docker.com/repository/docker/migueruiz/automatricula)
 
 ## Historias de usuario y Milestone
 
