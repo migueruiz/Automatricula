@@ -1,6 +1,6 @@
 FROM node:21-alpine
 
-LABEL maintainer="mruiz812@correo.ugr.es"\
+LABEL maintainer="mruiz812@correo.ugr.es" \
       version="5.0.1"
 
 RUN mkdir /.npm && chmod 777 /.npm
@@ -14,6 +14,8 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 
 RUN npm ci
+
+RUN rm -rf package.json package-lock.json
 
 WORKDIR /app/test
 
