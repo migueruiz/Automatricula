@@ -15,7 +15,7 @@ COPY package.json package-lock.json ./
 
 RUN npm ci
 
-RUN rm -rf package.json package-lock.json
+RUN rm -f package.json package-lock.json
 
 WORKDIR /app/test
 
