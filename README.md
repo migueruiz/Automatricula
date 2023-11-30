@@ -54,7 +54,7 @@ También accedemos a la imagen que tenemos en docker hub con este enlace [Automa
 
 ### Integración continua
 
-[CI](/doc/eleccion_ci.md)
+ - [CI](/doc/eleccion_ci.md)
 
 ## Historias de usuario y Milestone
 
