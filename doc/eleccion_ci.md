@@ -34,4 +34,8 @@ Circle CI no emplea checks API, emplea otros mecanismos, una cosa buena es que n
 
 ## Decisión final de elección de los Sistemas de CI
 
-Valorando las diferentes opciones que he encontrado, he desistido en los casos de AWS, y de Semaphore, ya que al ser de pago, no es algo que nuestro sistema busque actualmente. Por lo que tenía que decidir entre Circle CI y Cirrus CI, ambos gratuitos, con buen ciclo de actualizaciones, pero finalmente me he decantado por Circle CI, ya que es más sencillo de usar, y tiene una mejor integración con Github.
+Valorando las diferentes opciones que he encontrado, he desistido en los casos de AWS, y de Semaphore, ya que al ser de pago, no es algo que nuestro sistema busque actualmente. Por lo que tenía que decidir entre Circle CI y Cirrus CI, ambos gratuitos, con buen ciclo de actualizaciones, pero finalmente me he decantado por Circle CI, ya que es más sencillo de usar, y tiene una mejor integración con Github. 
+
+## Diferencias de las versiones de node
+
+En el caso del GitHub Actions he elegido la versión 18, para que soporte el mayor numero de versiones. En Docker la versión es la 20, ya que es la última versión estable y me aparecía por defecto.
