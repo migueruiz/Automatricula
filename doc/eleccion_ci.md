@@ -1,6 +1,6 @@
 # Sistemas de Integración Continua 
 
-Los sitemas de CI son una herramienta de software que centraliza todas las operaciones de CI creando un sistema fiable y estable para nuestro proyecto.
+Los sistemas de CI son una herramienta de software que centraliza todas las operaciones de CI creando un sistema fiable y estable para nuestro proyecto.
 
 ## Criterios 
 
@@ -20,7 +20,7 @@ Los criterios que debemos de tener en cuenta para la elección del sistema, son 
 
 Cuenta con una fácil integración entre GitHub y construir pipelines sobre proyectos Node, además podemos ejecutar imagenes docker para iniciar un contenedor, otra ventaja que tiene es que es gratuito y por ultimo tiene una buen ciclo de actualizaciones, siendo su ultima actualización en noviembre de 2023.
 
- * [Amazon Web Services](https://aws.amazon.com/es/codepipeline/)
+ * [Amazon Web Services CodePipeline](https://aws.amazon.com/es/codepipeline/)
 
 Es una buena opción como la anterior, tiene una fácil integración con Github y permite trabajar con docker, sin embargo, no es gratuito, aunque si que tiene un periodo de prueba gratuito, pero para ello exigen introducir datos de pago, algo que no nos conviene en el tema de gratuitidad.
 
