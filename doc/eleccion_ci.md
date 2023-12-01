@@ -32,6 +32,10 @@ Es compatible con Github. Además nos permite un entorno de ejecucción de image
 
 Circle CI no emplea checks API, emplea otros mecanismos, una cosa buena es que nos permite trabajar con Docker, pero al no ser una opción gratuita para la integración con GitHub, no nos interesa como opción.
 
+* [Travis CI](https://travis-ci.com/)
+
+Es un sistema CI compatible con GitHub y Docker. Tiene un buen ciclo de actualizaciones, siendo la última el 6 de noviembre de 2023. Uno de sus inconvenientes es que es gratuito en formato de prueba, ya que posteriormente, aun que no te pida datos de pago, te limita el uso, algo que no nos interesa.
+
 ## Decisión final de elección de los Sistemas de CI
 
 Valorando las diferentes opciones que he encontrado, he desistido en los casos de AWS, y de Semaphore, ya que al ser de pago, no es algo que nuestro sistema busque actualmente. Por lo que tenía que decidir entre Circle CI y Cirrus CI, ambos gratuitos, con buen ciclo de actualizaciones, pero finalmente me he decantado por Circle CI, ya que es más sencillo de usar, y tiene una mejor integración con Github. 
