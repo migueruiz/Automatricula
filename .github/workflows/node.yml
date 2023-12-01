@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-          node-version: [lts/Hydrogen, node]
+          node-version: [lts*, node]
 
     steps:
       - name: Checkout repository
