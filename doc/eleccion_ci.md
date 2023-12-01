@@ -38,7 +38,7 @@ Es un sistema CI compatible con GitHub y Docker. Tiene un buen ciclo de actualiz
 
 ## Decisión final de elección de los Sistemas de CI
 
-Valorando las diferentes opciones que he encontrado, he desistido en los casos de AWS, y de Semaphore, ya que al ser de pago, no es algo que nuestro sistema busque actualmente. Por lo que tenía que decidir entre Circle CI y Cirrus CI, ambos gratuitos, con buen ciclo de actualizaciones, pero finalmente me he decantado por Circle CI, ya que es más sencillo de usar, y tiene una mejor integración con Github. 
+Valorando las diferentes opciones que he encontrado, he desistido en los casos de AWS, y de Semaphore, ya que al ser de pago, no es algo que nuestro sistema busque actualmente. Luego tuve la opción de Travis, pero al estar bastante reducido el uso que puedo tener por las limitaciones, desisti en usarlo. Por lo que tenía que decidir entre Circle CI y Cirrus CI, ambos gratuitos, con buen ciclo de actualizaciones, pero finalmente me he decantado por Circle CI, ya que es más sencillo de usar, y tiene una mejor integración con Github. 
 
 ## Diferencias de las versiones de node
 
