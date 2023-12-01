@@ -5,3 +5,7 @@ automatizar:
   fichero: package.json
   orden: npm run
 test: test/comprobar_horario.test.ts
+
+CI:
+  - .github/workflows/node.yml
+  - .circleci/config.yml

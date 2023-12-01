@@ -20,6 +20,10 @@ Para comprobar la sintaxis de esta entidad y del resto del código será necesar
 npm run check
 ```
 
+[Runtime](/doc/runtime.md)
+[Task runner](/doc/gestor_tareas.md)
+[Gestor de dependencias](/doc/gestor_dependencias.md)
+
 ### Ejercución de los tests
 
 Para ejecutar los test para la comprobación del horario de un alumno se puede hacer de las siguientes formas:
@@ -27,6 +31,8 @@ Para ejecutar los test para la comprobación del horario de un alumno se puede h
 ```bash
 npm run test
 ```
+
+[Test](/doc/herramientas_test.md)
 
 ### Contenedor de test
 
@@ -44,12 +50,15 @@ docker run  -tv `pwd`:/app/test migueruiz/automatricula
 
 También accedemos a la imagen que tenemos en docker hub con este enlace [Automatricula](https://hub.docker.com/repository/docker/migueruiz/automatricula)
 
+[Contenedor](/doc/eleccion_imagen_base.md)
+
+### Integración continua
+
+ - [CI](/doc/eleccion_ci.md)
+
 ## Historias de usuario y Milestone
 
 - [Historias de usuario](./doc/historias_usuario.md)
 
 - [Milestone](./doc/milestone.md)
 
-## Herramientas de test
-
- - [Herramientas de Test](./doc/herramientas_test.md)
