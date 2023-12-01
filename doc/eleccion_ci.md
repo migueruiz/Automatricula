@@ -28,6 +28,10 @@ Es una buena opción como la anterior, tiene una fácil integración con Github 
 
 Es compatible con Github. Además nos permite un entorno de ejecucción de imagenes docker contando también con un soporte con problemas o errores en aquellas que sean remotas. Otra de sus ventajas es el ciclo de actualizaciones, ya que encontramos que su ultima versión data de julio de 2023.
 
+* [Buddy](https://buddy.works/)
+
+Es un sistema de CI que es compatible con contenedores Docker. Además, es compatible con GitHub. El problema que nos podemos encontrar es que no es gratuito teniendo varios planes de suscripción. Pero tiene un plan gratuito con varias restricciones por ello no es una buena opción.
+
  * [Semaphore Ci](https://semaphoreci.com/)
 
 Circle CI no emplea checks API, emplea otros mecanismos, una cosa buena es que nos permite trabajar con Docker, pero al no ser una opción gratuita para la integración con GitHub, no nos interesa como opción.
@@ -38,7 +42,7 @@ Es un sistema CI compatible con GitHub y Docker. Tiene un buen ciclo de actualiz
 
 ## Decisión final de elección de los Sistemas de CI
 
-Valorando las diferentes opciones que he encontrado, he desistido en los casos de AWS, y de Semaphore, ya que al ser de pago, no es algo que nuestro sistema busque actualmente. Luego tuve la opción de Travis, pero al estar bastante reducido el uso que puedo tener por las limitaciones, desisti en usarlo. Por lo que tenía que decidir entre Circle CI y Cirrus CI, ambos gratuitos, con buen ciclo de actualizaciones, pero finalmente me he decantado por Circle CI, ya que es más sencillo de usar, y tiene una mejor integración con Github. 
+Valorando las diferentes opciones que he encontrado, he desistido en los casos de AWS, de Semaphore y de Buddy, ya que al ser de pago, no es algo que nuestro sistema busque actualmente. Luego tuve la opción de Travis, pero al estar bastante reducido el uso que puedo tener por las limitaciones, desisti en usarlo. Por lo que tenía que decidir entre Circle CI y Cirrus CI, ambos gratuitos, con buen ciclo de actualizaciones, pero finalmente me he decantado por Circle CI, ya que es más sencillo de usar, y tiene una mejor integración con Github. 
 
 ## Diferencias de las versiones de node
 
